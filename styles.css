@@ -1,0 +1,303 @@
+/* Reset básico */
+html {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat";
+    height: 100%;
+    color: #333;
+    background-color: #000;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Logo {
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+/* Hero Section */
+.hero {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 100px 0;
+    background: url('/IMG/Fundo.png') no-repeat center center/cover;
+    color: #fff;
+}
+
+.hero-tutorial {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    background: url('/IMG/Fundo.png') no-repeat center center/cover;
+    color: #fff;
+}
+
+.AllSocial {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    width: 30%;
+}
+
+.hero-text h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    width: 30%;
+    animation: moveVertical 2s ease-in-out infinite;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Definindo a animação */
+@keyframes moveVertical {
+    0% {
+        transform: translateY(0); /* Início - sem movimento */
+    }
+    25% {
+        transform: translateY(-10px); /* Movendo para cima */
+    }
+    50% {
+        transform: translateY(0); /* Volta para a posição inicial */
+    }
+    75% {
+        transform: translateY(10px); /* Movendo para baixo */
+    }
+    100% {
+        transform: translateY(0); /* Volta para a posição inicial */
+    }
+}
+
+/* Download Buttons */
+.download-buttons {
+    margin-top: 30px;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* CSS de botão */
+.button.x {
+    max-width: 320px;
+    display: flex;
+    padding: 15px 8px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    gap: 0.75rem;
+    color: #000;
+    background-color: #DFFF00;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    text-decoration: none;
+  }
+  
+  .button.x svg {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+    fill: #000;
+    margin-right: 0.5rem;
+  }
+  
+  .button.x:hover {
+    transform: scale(1.02);
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button.x:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #DFFF00;
+  }
+  
+  .button.x:active {
+    transform: scale(0.98);
+    opacity: 0.8;
+  }
+  
+  @media (max-width: 480px) {
+    .button.x {
+      max-width: 100%;
+    }
+  }  
+
+/* Responsividade */
+@media (max-width: 1056px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        padding: 10px 50px;
+        width: 50%;
+    }
+
+    .hero-image {
+        width: 50%;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 850px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .hero-image {
+        display: none;
+    }
+}
+
+/* From Uiverse.io by vinodjangid07 */ 
+.card {
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #000000;
+    transition-duration: .3s;
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #24a1de;
+    transition-duration: .3s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  
